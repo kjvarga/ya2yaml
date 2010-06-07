@@ -115,6 +115,7 @@ class Ya2YAML
 	end
 
 	def emit_string(str,level)
+	  str = str.toutf8
 		(is_string,is_printable,is_one_line,is_one_plain_line) = string_type(str)
 		if is_string
 			if is_printable
